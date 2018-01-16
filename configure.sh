@@ -1,7 +1,7 @@
 !#/bin/bash
 
 echo "Configuring git"
-wget --directory-prefix=$HOME  https://github.com/git/git/blob/master/contrib/completion/git-completion.bash
+wget --directory-prefix=$HOME https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
 echo "source ~/git-completion.bash" >> ~/.bashrc
 
 color_options="[color]\n
@@ -13,4 +13,3 @@ color_options="[color]\n
 \tpager = true\n"
 
 echo -e $color_options >> ~/.gitconfig
-
