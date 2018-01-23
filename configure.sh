@@ -13,3 +13,8 @@ color_options="[color]\n
 \tpager = true\n"
 
 echo -e $color_options >> ~/.gitconfig
+
+aliases="[alias]\n
+pl = pull rebase\n"
+
+cho -e $aliases >> ~/.gitconfig
